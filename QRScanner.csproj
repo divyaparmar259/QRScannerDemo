@@ -13,4 +13,12 @@
     <PackageReference Include="MimeKit" Version="4.13.0" />
   </ItemGroup>
 
+
+
+  <ItemGroup>
+    <Content Update="wwwroot\Images\logo.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
