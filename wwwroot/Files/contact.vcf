@@ -1,8 +1,10 @@
 ﻿BEGIN:VCARD
 VERSION:3.0
+N:Diamond;Mansi;;;
 FN:Mansi Diamond
 ORG:Mansi Diamond
-TEL:+919601443281
-EMAIL:info@mansidiamond.com
-ADR:;;Surat, Gujarat;;India
+TEL;TYPE=CELL:+919601442345
+EMAIL;TYPE=INTERNET:info@mansidiamond.com
+ADR;TYPE=WORK:;;Surat, Gujarat;;;India
+URL:https://mansidiamond.in
 END:VCARD
