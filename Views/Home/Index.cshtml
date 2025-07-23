@@ -18,20 +18,20 @@
     .overlay {
         background-color: rgba(0, 0, 0, 0.65);
         min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: block; /* Remove flex behavior */
         text-align: center;
-        padding: 2rem;
+        padding: 3rem 1rem 2rem;
     }
 
     .hero-logo {
-        max-width: 120px;
+        width: 300px;
+        height: auto;
+        margin-top: 40px;
         margin-bottom: 20px;
     }
 
     .hero-title {
+        margin-bottom: 40px;
         font-size: 2.5rem;
         font-weight: bold;
         text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
@@ -79,6 +79,23 @@
             color: white;
         }
 
+    @@media (max-width: 768px) {
+        .hero-logo
+
+    {
+        width: 200px;
+    }
+
+    }
+
+    @@media (max-width: 480px) {
+        .hero-logo
+
+    {
+        width: 150px;
+    }
+
+    }
     /* Responsive Adjustments */
     @@media (max-width: 768px) {
         .hero-title
