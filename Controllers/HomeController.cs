@@ -32,7 +32,7 @@ namespace QRScanner.Controllers
         {
             if (ModelState.IsValid)
             {
-                await _emailService.SendEmailAsync(form.Name, form.Email, form.Message);
+                await _emailService.SendEmailAsync(form.Name, form.ContactNumber, form.Message);
                 //ViewBag.Message = "Your message was sent successfully!";
                 TempData["Success"] = "Email sent successfully!";
                 return RedirectToAction("Index", "Home");

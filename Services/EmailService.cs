@@ -14,7 +14,7 @@ namespace QRScanner.Services
             _config = config;
         }
 
-        public async Task SendEmailAsync(string name, string email, string message)
+        public async Task SendEmailAsync(string name, string contactNo, string message)
         {
             var emailMessage = new MimeMessage();
             emailMessage.From.Add(new MailboxAddress("QR Connect", _config["EmailSettings:SenderEmail"]));
@@ -35,8 +35,8 @@ namespace QRScanner.Services
                         <td style='padding: 8px;'>{name}</td>
                     </tr>
                     <tr>
-                        <td style='padding: 8px;'>Email</td>
-                        <td style='padding: 8px;'>{email}</td>
+                        <td style='padding: 8px;'>Contact Number</td>
+                        <td style='padding: 8px;'>{contactNo}</td>
                     </tr>
                     <tr>
                         <td style='padding: 8px;'>Message</td>
